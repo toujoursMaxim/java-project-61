@@ -1,5 +1,4 @@
 plugins {
-    id 'java'
     id 'application'
 }
 application {
@@ -14,10 +13,13 @@ version = '1.0-SNAPSHOT'
 repositories {
     mavenCentral()
 }
+run {
+    standardInput = System.in
+}
 
 dependencies {
     testImplementation platform('org.junit:junit-bom:5.9.2')
-    testImplementation 'org.junit.jupiter:junit-jupiter:5.9.2'
+    testImplementation 'org.junit.jupi3ter:junit-jupiter:5.9.2'
 }
 
 test {
