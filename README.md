@@ -5,7 +5,7 @@
 Demonstration
 
 Greeting(#1)
-https://asciinema.org/connect/a9b0771b-8504-4ba9-b72f-3feeb4d509bd
+https://asciinema.org/a/wQVLgdkuG6vCi0rpP21a8xb0B
 
 Even game(#2)
 https://asciinema.org/a/b4O99y8HEX2iOmDaqSYzIno8x
