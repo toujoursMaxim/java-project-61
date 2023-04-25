@@ -16,14 +16,7 @@ public class App {
         Scanner scanner = new Scanner(System.in);
         int number = scanner.nextInt();
         System.out.println("Your choice: " + number);
-<<<<<<< HEAD
-=======
-        0 - Exit""");
-        Scanner scanner = new Scanner(System.in);
-        int number = scanner.nextInt();
-        System.out.println("Your choice is " + number);
-                           
->>>>>>> refs/remotes/origin/main
+
         switch (number) {
             case (0):
                 break;
