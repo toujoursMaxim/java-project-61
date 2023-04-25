@@ -12,9 +12,18 @@ public class App {
         2 - Game Even
         3 - Calc
         0 - Exit""");
+                           
         Scanner scanner = new Scanner(System.in);
         int number = scanner.nextInt();
         System.out.println("Your choice: " + number);
+<<<<<<< HEAD
+=======
+        0 - Exit""");
+        Scanner scanner = new Scanner(System.in);
+        int number = scanner.nextInt();
+        System.out.println("Your choice is " + number);
+                           
+>>>>>>> refs/remotes/origin/main
         switch (number) {
             case (0):
                 break;
