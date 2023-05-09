@@ -8,7 +8,6 @@ public class GameEven {
         Scanner scanner = new Scanner(System.in);
         Random random = new Random();
 
-        System.out.println();
         System.out.println("Welcome to the Brain Games!");
         System.out.print("May I have your name? ");
         String userName = scanner.nextLine();
@@ -25,11 +24,11 @@ public class GameEven {
             if (number % 2 == 0 && answer.equals("yes") || number % 2 != 0 && answer.equals("no")) {
                 System.out.println("Correct!");
             } else {
-                System.out.println("'" + answer + "'" + " is wrong answer. ;( " +
-                        "Correct answer was " + "'" + correctAnswer + "'" + ".\nLet's try again, " + userName + "!");
+                System.out.println("'" + answer + "'" + " is wrong answer. ;( "
+                        + "Correct answer was " + "'" + correctAnswer + "'" + ".\nLet's try again, " + userName + "!");
                 break;
-
             }
+
             if (i == 2) {
                 System.out.println("Congratulations, " + userName + "!");
                 scanner.close();
