@@ -9,3 +9,6 @@ https://asciinema.org/a/wQVLgdkuG6vCi0rpP21a8xb0B
 
 Even game(#2)
 https://asciinema.org/a/b4O99y8HEX2iOmDaqSYzIno8x
+
+Calculator(#3)
+https://asciinema.org/a/My92R9w01QSXrRkHp7Og24M93
