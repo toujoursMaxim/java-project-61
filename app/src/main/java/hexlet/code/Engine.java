@@ -4,7 +4,6 @@ import java.util.Scanner;
 
 public class Engine {
     public static final int TOTAL_ROUNDS = 3;
-    public static final int ANSWERS_COUNT = 2;
 
     public static void run(String gameCount, String[][] questionsAndAnswers) {
 
