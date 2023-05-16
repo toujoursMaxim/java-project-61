@@ -13,3 +13,6 @@ https://asciinema.org/a/b4O99y8HEX2iOmDaqSYzIno8x
 
 Calculator(#3)
 https://asciinema.org/a/My92R9w01QSXrRkHp7Og24M93
+
+GCD(#4)
+https://asciinema.org/a/fZyAubij91agHMcVKYP5HNLqC
