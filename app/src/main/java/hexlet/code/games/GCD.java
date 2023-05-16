@@ -11,21 +11,21 @@ public class GCD {
     static final int MIN_NUMBER = 1;
     static final int MAX_NUMBER = 100;
 
-    public static void getCgd() {
+    public static void getGcd() {
         String[][] questionAnswer = new String[TOTAL_ROUNDS][ANSWERS_ARRAY_SIZE];
 
         for (int i = 0; i < TOTAL_ROUNDS; i++) {
             int number1 = Utils.getRandomNumber(MIN_NUMBER, MAX_NUMBER);
             int number2 = Utils.getRandomNumber(MIN_NUMBER, MAX_NUMBER);
             String question = number1 + " " + number2;
-            String answer = String.valueOf(cgdCalculation(number1, number2));
+            String answer = String.valueOf(gcdCalculation(number1, number2));
             questionAnswer[i][0] = question;
             questionAnswer[i][1] = answer;
         }
 
         Engine.run(GAME_TASK, questionAnswer);
     }
-    private static int cgdCalculation(int value1, int value2) {
+    private static int gcdCalculation(int value1, int value2) {
         while (value1 != 0 && value2 != 0) {
             if (value1 > value2) {
                 value1 = value1 % value2;

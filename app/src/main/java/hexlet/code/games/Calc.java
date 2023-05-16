@@ -11,7 +11,7 @@ public class Calc {
     public static final String[] OPERATORS = {"+", "-", "*"};
     public static final int MAX_NUMBER = 10;
 
-    public static void script() {
+    public static void getCalculate() {
 
         String[][] data = new String[TOTAL_ROUNDS][2];
         for (int i = 0; i < TOTAL_ROUNDS; i++) {
