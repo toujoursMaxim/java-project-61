@@ -3,7 +3,9 @@ package hexlet.code.games;
 import java.util.Random;
 import java.util.Scanner;
 
+
 public class Even {
+    private static final int MAX_RANDOM_NUMBERS = 100;
     public static void even() {
         Scanner scanner = new Scanner(System.in);
         Random random = new Random();
@@ -15,7 +17,7 @@ public class Even {
         System.out.println("Answer 'yes' if the number is even, otherwise answer 'no'.");
 
         for (int i = 0; i <= 2; i++) {
-            int number = random.nextInt(100);
+            int number = random.nextInt(MAX_RANDOM_NUMBERS);
             System.out.println("Question: " + number);
             String answer = scanner.nextLine();
             System.out.println("Your answer: " + answer);

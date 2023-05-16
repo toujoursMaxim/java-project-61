@@ -13,8 +13,8 @@ public class Progression {
     public static final int PROGRESSION_SIZE = 10;
     private static final int MAX_LENGTH = 6;
     private static final int MIN_LENGTH = 5;
-    public static int MIN_NUMBER = 1;
-    public static int MAX_NUMBER = 100;
+    private static final int MIN_NUMBER = 1;
+    private static final int MAX_NUMBER = 100;
     private static final String GAME_TASK = "What number is missing in the progression?";
 
     public static void generateProgression() {
@@ -40,7 +40,7 @@ public class Progression {
         private static String[] getProgression(int elementCount, int stepOfProgression, int progressionLength) {
             String[] progression = new String[progressionLength];
 
-            for (int i = 0; i < progressionLength ; i += 1) {
+            for (int i = 0; i < progressionLength; i += 1) {
                 progression[i] = Integer.toString(elementCount + i * stepOfProgression);
             }
 

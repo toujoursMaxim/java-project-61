@@ -14,7 +14,7 @@ public class Calc {
     public static void script() {
 
         String[][] data = new String[TOTAL_ROUNDS][2];
-        for(int i = 0; i < TOTAL_ROUNDS; i++) {
+        for (int i = 0; i < TOTAL_ROUNDS; i++) {
 
             int number1 = Utils.getRandomNumber(0, MAX_NUMBER);
             int number2 = Utils.getRandomNumber(0, MAX_NUMBER);
@@ -25,7 +25,7 @@ public class Calc {
 
         Engine.run(DESCRIPTION, data);
     }
-    private static int calculate(int num1 , int num2, String operator) {
+    private static int calculate(int num1, int num2, String operator) {
 
         return switch (operator) {
             case ("+") -> num1 + num2;
