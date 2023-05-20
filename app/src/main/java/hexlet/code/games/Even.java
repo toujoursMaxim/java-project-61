@@ -1,40 +1,34 @@
+
 package hexlet.code.games;
 
-import java.util.Random;
-import java.util.Scanner;
+import hexlet.code.Engine;
+import hexlet.code.Utils;
 
+import static hexlet.code.Engine.TOTAL_ROUNDS;
 
 public class Even {
-    private static final int MAX_RANDOM_NUMBERS = 100;
-    public static void even() {
-        Scanner scanner = new Scanner(System.in);
-        Random random = new Random();
+    private static final int MAX_NUMBER = 100;
+    private static final int MIN_NUMBER = 1;
+    private static final String GAME_TASK = "Answer 'yes' if the number is even, otherwise answer 'no'.";
 
-        System.out.println("Welcome to the Brain Games!");
-        System.out.print("May I have your name? ");
-        String userName = scanner.nextLine();
-        System.out.println("Hello, " + userName + "!");
-        System.out.println("Answer 'yes' if the number is even, otherwise answer 'no'.");
+    public static void startEvenGame() {
+        Engine.run(GAME_TASK, evenGame());
+    }
 
-        for (int i = 0; i <= 2; i++) {
-            int number = random.nextInt(MAX_RANDOM_NUMBERS);
-            System.out.println("Question: " + number);
-            String answer = scanner.nextLine();
-            System.out.println("Your answer: " + answer);
-            String correctAnswer = (number % 2 == 0) ? "yes" : "no";
+    public static String[][] evenGame() {
+        String[][] questionAnswer = new String[TOTAL_ROUNDS][2];
 
-            if (number % 2 == 0 && answer.equals("yes") || number % 2 != 0 && answer.equals("no")) {
-                System.out.println("Correct!");
-            } else {
-                System.out.println("'" + answer + "'" + " is wrong answer. ;( "
-                        + "Correct answer was " + "'" + correctAnswer + "'" + ".\nLet's try again, " + userName + "!");
-                break;
-            }
-
-            if (i == 2) {
-                System.out.println("Congratulations, " + userName + "!");
-                scanner.close();
-            }
+        for (int i = 0; i < TOTAL_ROUNDS; i++) {
+            int numberTest = Utils.getRandomNumber(MIN_NUMBER, MAX_NUMBER);
+            String question = String.valueOf(numberTest);
+            String answer = evenGameCheck(numberTest) ? "yes" : "no";
+            questionAnswer[i][0] = question;
+            questionAnswer[i][1] = answer;
         }
+        return questionAnswer;
+    }
+
+    public static boolean evenGameCheck(int numberTest) {
+        return numberTest % 2 == 0;
     }
 }

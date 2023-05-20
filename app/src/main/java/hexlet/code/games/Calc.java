@@ -7,24 +7,28 @@ import hexlet.code.Utils;
 import static hexlet.code.Engine.TOTAL_ROUNDS;
 
 public class Calc {
-    private static final String DESCRIPTION = "What is the result of the expression?";
+    private static final String GAME_TASK = "What is the result of the expression?";
     public static final String[] OPERATORS = {"+", "-", "*"};
     public static final int MAX_NUMBER = 10;
 
-    public static void getCalculate() {
+    public static void startCalcGame() {
+        Engine.run(GAME_TASK, calculatorGame());
+    }
 
-        String[][] data = new String[TOTAL_ROUNDS][2];
+    public static String[][] calculatorGame() {
+
+        String[][] questionsAndAnswers = new String[TOTAL_ROUNDS][2];
         for (int i = 0; i < TOTAL_ROUNDS; i++) {
 
             int number1 = Utils.getRandomNumber(0, MAX_NUMBER);
             int number2 = Utils.getRandomNumber(0, MAX_NUMBER);
             String operator = OPERATORS[Utils.getRandomNumber(0, OPERATORS.length)];
-            data[i][0] = number1 + " " + operator + " " + number2;
-            data[i][1] = String.valueOf(calculate(number1, number2, operator));
+            questionsAndAnswers[i][0] = number1 + " " + operator + " " + number2;
+            questionsAndAnswers[i][1] = String.valueOf(calculate(number1, number2, operator));
         }
-
-        Engine.run(DESCRIPTION, data);
+        return questionsAndAnswers;
     }
+
     private static int calculate(int num1, int num2, String operator) {
 
         return switch (operator) {

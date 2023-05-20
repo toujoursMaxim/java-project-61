@@ -5,13 +5,13 @@ import java.util.Scanner;
 public class Engine {
     public static final int TOTAL_ROUNDS = 3;
 
-    public static void run(String gameCount, String[][] questionsAndAnswers) {
+    public static void run(String description, String[][] questionsAndAnswers) {
 
         Scanner scanner = new Scanner(System.in);
         System.out.print("Welcome to the Brain Games!\nMay I have your name? ");
         String userName = scanner.nextLine();
         System.out.println("Hello, " + userName + "!");
-        System.out.println(gameCount);
+        System.out.println(description);
 
         for (int i = 0; i < TOTAL_ROUNDS; i++) {
             String question = questionsAndAnswers[i][0];

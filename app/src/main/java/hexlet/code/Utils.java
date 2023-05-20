@@ -5,7 +5,7 @@ public class Utils {
         return min + (int) (Math.random() * max);
     }
 
-    public static int getPosition(int length) {
+    public static int getRandomNumberPosition(int length) {
         return (int) (Math.random() * length);
     }
 }
