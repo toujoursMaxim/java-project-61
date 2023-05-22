@@ -6,15 +6,15 @@ import static hexlet.code.Engine.TOTAL_ROUNDS;
 import static hexlet.code.Utils.getRandomNumber;
 
 public class Prime {
-    public static final String GAME_TASK = "Answer 'yes' if given number is prime. Otherwise answer 'no'.";
-    public static final int MAX_NUMBER = 100;
-    public static final int MIN_NUMBER = 1;
+    private static final String GAME_TASK = "Answer 'yes' if given number is prime. Otherwise answer 'no'.";
+    private static final int MAX_NUMBER = 100;
+    private static final int MIN_NUMBER = 1;
 
     public static void startPrimeGame() {
         Engine.run(GAME_TASK, primeGame());
     }
 
-    public static String[][] primeGame() {
+    private static String[][] primeGame() {
         String[][] questionAndAnswer = new String[TOTAL_ROUNDS][2];
 
         for (int i = 0; i < TOTAL_ROUNDS; i++) {
@@ -27,7 +27,7 @@ public class Prime {
         return questionAndAnswer;
     }
 
-    public static boolean isPrime(int checkNumber) {
+    private static boolean isPrime(int checkNumber) {
         int numOfDividers = 0;
 
         for (int i = checkNumber; i > 0; i--) {
