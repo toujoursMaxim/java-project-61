@@ -7,14 +7,14 @@ import static hexlet.code.Engine.TOTAL_ROUNDS;
 
 public class GCD {
     private static final String GAME_TASK = "Find the greatest common divisor of given numbers.";
-    static final int MIN_NUMBER = 1;
-    static final int MAX_NUMBER = 100;
+    private static final int MIN_NUMBER = 1;
+    private static final int MAX_NUMBER = 100;
 
     public static void startGcdGame() {
         Engine.run(GAME_TASK, gcdGame());
     }
 
-    public static String[][] gcdGame() {
+    private static String[][] gcdGame() {
         String[][] questionAndAnswer = new String[TOTAL_ROUNDS][2];
 
         for (int i = 0; i < TOTAL_ROUNDS; i++) {
