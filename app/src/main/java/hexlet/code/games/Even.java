@@ -15,7 +15,7 @@ public class Even {
         Engine.run(GAME_TASK, evenGame());
     }
 
-    public static String[][] evenGame() {
+    private static String[][] evenGame() {
         String[][] questionAnswer = new String[TOTAL_ROUNDS][2];
 
         for (int i = 0; i < TOTAL_ROUNDS; i++) {
@@ -28,7 +28,7 @@ public class Even {
         return questionAnswer;
     }
 
-    public static boolean evenGameCheck(int numberTest) {
+    private static boolean evenGameCheck(int numberTest) {
         return numberTest % 2 == 0;
     }
 }
