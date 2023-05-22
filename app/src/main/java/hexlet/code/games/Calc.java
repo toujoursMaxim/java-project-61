@@ -8,14 +8,14 @@ import static hexlet.code.Engine.TOTAL_ROUNDS;
 
 public class Calc {
     private static final String GAME_TASK = "What is the result of the expression?";
-    public static final String[] OPERATORS = {"+", "-", "*"};
-    public static final int MAX_NUMBER = 10;
+    private static final String[] OPERATORS = {"+", "-", "*"};
+    private static final int MAX_NUMBER = 10;
 
     public static void startCalcGame() {
         Engine.run(GAME_TASK, calculatorGame());
     }
 
-    public static String[][] calculatorGame() {
+    private static String[][] calculatorGame() {
 
         String[][] questionsAndAnswers = new String[TOTAL_ROUNDS][2];
         for (int i = 0; i < TOTAL_ROUNDS; i++) {
