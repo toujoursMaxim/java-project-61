@@ -14,7 +14,7 @@
 
 **:star:Find the largest common divisor**
 
-**:star:Arithmetic progressions**:speech_balloon:
+**:star:Arithmetic progressions**
 
 **:star:Prime numbers**
  
