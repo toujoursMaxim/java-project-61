@@ -6,48 +6,76 @@
 
 <h2>Description</h2>
 
-*Short Mathematical Games in Round 3. Contain the following games:
-**+ Even-odd**
-**+ Calculator** 
-**+ Find the largest common divisor**
-**+ Arithmetic progressions** 
-**+ Prime numbers**
+*Short Mathematical Games in Round 3. Contain the following games:*
+
+**:star:Even-odd**
+
+**:star:Calculator** 
+
+**:star:Find the largest common divisor**
+
+**:star:Arithmetic progressions**:speech_balloon:
+
+**:star:Prime numbers**
  
-*The game generates random numbers, a pair of digits, and progressions. The user needs to perform different arithmetic operations. 
-*In the case of three correct decisions, the user wins. 
-*In the case of one error, the program is closed and you need to restart the program. 
-*To launch the game, open the terminal, go to the game directory and follow the command:
-```. $ make run-dist```. 
-Then follow the instructions in the menu.
-__________________________________________________________________________________________________________________________________________________________________
-<h3>:brain:Игры Разума:brain:</h3>
+*The game generates random numbers, a pair of digits, and progressions.*
+*The user needs to perform different arithmetic operations.*
+*In the case of three correct decisions, the user wins.*
+*In the case of one error, the program is closed and you need to restart the program.*
+*To launch the game, open the terminal, go to the game directory and follow the command:*
 
-*Cобрание коротких математических игр в 3 раунда.
-*Содержат в себе следующие игры: 
-**+ Чётное-нечётное** 
-**+ Калькулятор**
-**+ Найди наибольший общий делитель**
-**+ Арифметические прогрессии** 
-**+ Простые числа**
+```. $ make run-dist```.
 
-*Игра генерирует случайные числа, пару цифр, а так же прогрессии. 
-Пользователю необходимо выполнять разные арифметические операции. 
-В случае трёх верных решений, пользователь выигрывает. 
-В случае одной ошибки программа закрывается, и вам необходимо перезапустить программу. 
-Для запуска игры откройте терминал, перейдите в папку с игрой и выполните следующую команду: 
-```. $ make run-dist``` 
-После этого следуйте указаниям в меню.
+*Then follow the instructions in the menu.*
 
 <h3>Demonstration:</h3>
 
-**[Greeting/Приветствие(#1)](https://asciinema.org/a/wQVLgdkuG6vCi0rpP21a8xb0B)**
+**[Greeting(#1)](https://asciinema.org/a/wQVLgdkuG6vCi0rpP21a8xb0B)**
 
-**[Even game/Чётное-нечётное(#2)](https://asciinema.org/a/b4O99y8HEX2iOmDaqSYzIno8x)**
+**[Even game(#2)](https://asciinema.org/a/b4O99y8HEX2iOmDaqSYzIno8x)**
 
-**[Calculator/Калькулятор(#3)](https://asciinema.org/a/My92R9w01QSXrRkHp7Og24M93)**
+**[Calculator(#3)](https://asciinema.org/a/My92R9w01QSXrRkHp7Og24M93)**
 
-**[GCD/Найди наибольший общий делитель(#4)](https://asciinema.org/a/fZyAubij91agHMcVKYP5HNLqC)**
+**[GCD(#4)](https://asciinema.org/a/fZyAubij91agHMcVKYP5HNLqC)**
 
-**[Progression/Арифметические прогрессии(#5)](https://asciinema.org/a/peTqtNWIUT78ghugZpkT6NXI3)**
+**[Progression(#5)](https://asciinema.org/a/peTqtNWIUT78ghugZpkT6NXI3)**
 
-**[Prime/Простые числа(#6)](https://asciinema.org/a/4vgPgjA2fcBmlnkRyBlqDi7SY)**
+**[Prime(#6)](https://asciinema.org/a/4vgPgjA2fcBmlnkRyBlqDi7SY)**
+__________________________________________________________________________________________________________________________________________________________________
+<h3>:brain:Игры Разума:brain:</h3>
+
+*Cобрание коротких математических игр в 3 раунда.*
+*Содержат в себе следующие игры:* 
+**:star2:Чётное-нечётное**
+
+**:star2:Калькулятор**
+
+**:star2:Найди наибольший общий делитель**
+
+**:star2:Арифметические прогрессии**
+
+**:star2:Простые числа**
+
+*Игра генерирует случайные числа, пару цифр, а так же прогрессии.* 
+*Пользователю необходимо выполнять разные арифметические операции.* 
+*В случае трёх верных решений, пользователь выигрывает.* 
+*В случае одной ошибки программа закрывается, и вам необходимо перезапустить программу.* 
+*Для запуска игры откройте терминал, перейдите в папку с игрой и выполните следующую команду:*
+
+```. $ make run-dist```.
+
+*После этого следуйте указаниям в меню.*
+
+<h3>Демонстрация:</h3>
+
+**[Приветствие(#1)](https://asciinema.org/a/wQVLgdkuG6vCi0rpP21a8xb0B)**
+
+**[Чётное-нечётное(#2)](https://asciinema.org/a/b4O99y8HEX2iOmDaqSYzIno8x)**
+
+**[Калькулятор(#3)](https://asciinema.org/a/My92R9w01QSXrRkHp7Og24M93)**
+
+**[Найди наибольший общий делитель(#4)](https://asciinema.org/a/fZyAubij91agHMcVKYP5HNLqC)**
+
+**[Арифметические прогрессии(#5)](https://asciinema.org/a/peTqtNWIUT78ghugZpkT6NXI3)**
+
+**[Простые числа(#6)](https://asciinema.org/a/4vgPgjA2fcBmlnkRyBlqDi7SY)**
