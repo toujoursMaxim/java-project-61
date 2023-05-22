@@ -9,7 +9,7 @@ public class Progression {
 
     private static final int MAX_STEP = 9;
     private static final int MIN_STEP = 1;
-    public static final int PROGRESSION_SIZE = 10;
+    private static final int PROGRESSION_SIZE = 10;
     private static final int MAX_LENGTH = 6;
     private static final int MIN_LENGTH = 5;
     private static final int MIN_NUMBER = 1;
@@ -20,14 +20,14 @@ public class Progression {
         Engine.run(GAME_TASK, progressionGame());
     }
 
-    public static String[][] progressionGame() {
+    private static String[][] progressionGame() {
         String[][] questionAnswer = new String[TOTAL_ROUNDS][2];
 
         for (int i = 0; i < TOTAL_ROUNDS; i++) {
             int length = Utils.getRandomNumber(MIN_LENGTH, MAX_LENGTH);
             int elementCount = Utils.getRandomNumber(MIN_NUMBER, MAX_NUMBER);
             int stepOfProgression = Utils.getRandomNumber(MIN_STEP, MAX_STEP);
-            int missingElement = Utils.getRandomNumberPosition(length);
+            int missingElement = Utils.getRandomNumber(length);
 
             String[] progressionToString = getProgression(elementCount, stepOfProgression, PROGRESSION_SIZE);
             String answer = progressionToString[missingElement];
